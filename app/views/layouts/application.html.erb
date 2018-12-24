@@ -32,9 +32,8 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <%= link_to 'Iвенти',ideas_path %>
-        <a href="#">Чат</a>
-        <%= link_to 'Мої Iдеї', welcome_userideas_path %>
         <% if user_signed_in?%>
+          <%= link_to 'Мої Iдеї', welcome_userideas_path %>
           <%= link_to('Вийти з акаунту', destroy_user_session_path, method: :delete) %>
         <% else %>
         <%= link_to('Увiйти в акаунт', new_user_session_path) %>
