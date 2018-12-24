@@ -1,0 +1,208 @@
+@import "bootstrap";
+.header {
+  overflow: hidden;
+  height: 12vh;
+  background-color: #9F2606;
+  img {
+    border-radius: 50%;
+    height: 10vh;
+    position: absolute;
+    right:10px;
+    top: 5px;
+  }
+}
+
+p,h1,h2,i,h3,a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.new_user {
+  margin-top: 4vh;
+  text-align: center;
+  vertical-align: middle;
+  width: 90%;
+  margin-left: 5%;
+  label {
+    font-size: 1.5em;
+  }
+  #user_email,#user_password,#user_password_confirmation {
+    border-radius: 5px;
+    width: 70%;
+    height: 4vh;
+    font-size: 1.5em;
+    border: 1px solid #9F2606;
+  }
+  input {
+    margin-top: 2vh;
+    background-color: inherit;
+    border: 2px solid black;
+    width: 30%;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    height: 4vh;
+  }
+}
+#notice_wrapper {
+  width: 100%;
+  position: absolute;
+  background: rgba(208,103,82,0.90);
+  z-index: 5;
+  p {
+    color:#f9ece4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 1.5rem 0;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#link {
+  color: #9F2606;
+  text-decoration: underline;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+
+
+.idea {
+  overflow: hidden;
+  border:1px solid #e5e5e5;
+  border-radius: 3%;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 1vh;
+  color:black;
+  .up {
+    margin-left: 1em;
+    display: inline-block;
+    color:green;
+    font-size: 3em;
+  }
+
+  .down {
+    margin-right: 1em;
+    float: right;
+    color:red;
+    font-size: 3em;
+  }
+  img {
+    width:100%;
+    border-radius: 3%;
+  }
+  h2 {
+    margin: 5px;
+    font-size:2em;
+  }
+  p {
+    margin: 5px;
+    font-size: 1.3em;
+  }
+  .upvote {
+    text-align: center;
+    color: green;
+  }
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #9F2606; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#navbar {
+  margin: 10px 10px;
+  width: 45px;
+  height: 35px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  span {
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  span:nth-child(1) {
+    top: 0px;
+  }
+  span:nth-child(2) {
+    top: 18px;
+  }
+  span:nth-child(3) {
+    top: 36px;
+  }
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.sidenav a {
+  padding-top: 1vw;
+  text-decoration: none;
+  font-size: 9vw;
+  color: #e5e5e5;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}

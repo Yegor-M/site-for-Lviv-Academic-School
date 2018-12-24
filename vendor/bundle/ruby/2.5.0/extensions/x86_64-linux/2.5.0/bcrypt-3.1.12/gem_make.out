@@ -1,0 +1,19 @@
+current directory: /home/yegor/projects/Lag/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+/usr/bin/ruby2.5 -r ./siteconf20181223-25279-1nvrqbc.rb extconf.rb
+creating Makefile
+
+current directory: /home/yegor/projects/Lag/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/yegor/projects/Lag/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/yegor/projects/Lag/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20181223-25279-sfi1w3
