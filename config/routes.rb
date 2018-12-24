@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :ideas
   get 'welcome/index'
   get 'welcome/userideas'
-  root 'welcome#index'
+  root ideas_path
   resources :ideas do
     member do
       put "like", to: "ideas#upvote"
