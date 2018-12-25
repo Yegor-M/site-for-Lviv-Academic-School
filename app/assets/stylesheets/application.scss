@@ -14,6 +14,7 @@
 
 p,h1,h2,i,h3,a {
   font-family: 'Roboto', sans-serif;
+  color:black;
 }
 
 .new_user {
@@ -91,17 +92,17 @@ h1 {
   margin-bottom: 1vh;
   color:black;
   .up {
-    margin-left: 1em;
+    margin-left: 1.5em;
     display: inline-block;
     color:green;
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .down {
-    margin-right: 1em;
+    margin-right: 1.5em;
     float: right;
     color:red;
-    font-size: 3em;
+    font-size: 4em;
   }
   img {
     width:100%;
@@ -109,11 +110,11 @@ h1 {
   }
   h2 {
     margin: 5px;
-    font-size:2em;
+    font-size:2.3em;
   }
   p {
     margin: 5px;
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
   .upvote {
     text-align: center;

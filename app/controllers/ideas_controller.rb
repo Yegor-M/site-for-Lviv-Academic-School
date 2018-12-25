@@ -20,13 +20,13 @@ class IdeasController < ApplicationController
   def upvote
     @idea = Idea.find(params[:id])
     @idea.upvote_by current_user
-    redirect_to idea_path(@idea)
+    redirect_to ideas_path
   end
 
   def downvote
     @idea = Idea.find(params[:id])
     @idea.downvote_by current_user
-    redirect_to idea_path(@idea)
+    redirect_to ideas_path
   end
 
   # GET /ideas/1/edit
@@ -82,7 +82,7 @@ class IdeasController < ApplicationController
     def checkuser
       unless user_signed_in?
         flash[:notice] = 'Треба Авторизуватись!'
-        redirect_to root_path
+        redirect_to new_user_session_path
       end
     end
     # Never trust parameters from the scary internet, only allow the white list through.

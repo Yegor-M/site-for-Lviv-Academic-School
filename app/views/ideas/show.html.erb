@@ -7,7 +7,7 @@
   <% if @idea.score > 0 %>
   <h3 class="upvote"><%= @idea.score %> +</h3>
   <% elsif @idea.score < 0 %>
-  <h3 class="upvote", style="color:red;"><%= idea.score.abs %> —</h3>
+  <h3 class="upvote", style="color:red;"><%= @idea.score.abs %> —</h3>
   <% else %>
   <h3 class="upvote", style="color:black;"><%= @idea.score.abs %></h3>
   <% end %>

@@ -4,7 +4,7 @@
     <div class="idea">
       <%= image_tag(idea.imagepath) %>
       <h2><%= idea.title %></h2>
-      <p><%= idea.description %></p>
+      <p><%= truncate(idea.description, length: 100) %></p>
       <% if idea.score > 0 %>
       <h3 class="upvote">Рейтинг: +<%= idea.score %></h3>
       <% elsif idea.score < 0 %>
@@ -12,6 +12,8 @@
       <% else %>
       <h3 class="upvote", style="color:black;">Рейтинг: <%= idea.score.abs %></h3>
       <% end %>
+      <%= link_to '+', like_idea_path(idea),:class => "up", method: :put %>
+      <%= link_to '—', dislike_idea_path(idea),:class => "down", method: :put %>
     </div>
   </a>
 <% end %>
