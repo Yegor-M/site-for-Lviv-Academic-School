@@ -28,7 +28,7 @@ p,h1,h2,i,h3,a {
   #user_email,#user_password,#user_password_confirmation {
     border-radius: 5px;
     width: 70%;
-    height: 4vh;
+    height: 6vh;
     font-size: 1.5em;
     border: 1px solid #9F2606;
   }
@@ -36,11 +36,21 @@ p,h1,h2,i,h3,a {
     margin-top: 2vh;
     background-color: inherit;
     border: 2px solid black;
-    width: 30%;
-    font-size: 1.3rem;
+    width: 40%;
+    font-size: 1.8rem;
     border-radius: 6px;
-    height: 4vh;
+    height: 8vh;
   }
+textarea{
+  display: block;
+  overflow: hidden;
+  padding: 2vh;
+  width: 90%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 1px solid grey;
+}
 }
 #notice_wrapper {
   width: 100%;

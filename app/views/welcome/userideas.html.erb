@@ -1,4 +1,4 @@
-<h2 style="text-align:center;">Тут Твої Iдеї</h2>
+<h2 style="text-align:center;">Тут Знаходяться Твої Iдеї</h2>
 <% @ideas.each do |idea| %>
   <a href="/ideas/<%=idea.id%>">
     <div class="idea">
@@ -14,5 +14,5 @@
       <% end %>
     </div>
   </a>
-  <%= link_to 'Destroy', idea,:id => "link", method: :delete, data: { confirm: 'Are you sure?' } if idea.user.id == current_user.id%>
+  <%= link_to 'Видалити', idea,:id => "link", method: :delete, data: { confirm: 'Are you sure?' } if idea.user.id == current_user.id%>
 <% end %>
